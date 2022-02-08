@@ -1,0 +1,54 @@
+@import "../../assets/style/variables.module.scss";
+.inspirationWrapper {
+  width: 100%;
+  padding: 5%;
+  box-sizing: border-box;
+  background-color: #fcf8f3;
+  display: flex;
+  align-items: center;
+  .contentSide {
+    width: 40%;
+    padding: 60px 10px;
+
+    p {
+      font-family: gilroyMedium;
+      color: $gray-500;
+    }
+    button {
+      width: 60%;
+    }
+  }
+  .gallerySide {
+    width: 60%;
+    display: flex;
+    gap: 20px;
+
+    height: 500px;
+    .carouselWrapper {
+      width: 100%;
+      img {
+        height: 500px;
+        image-resolution: 1;
+      }
+
+      .dots {
+        display: block;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color: $gray-200;
+        border: 5px solid #fcf8f3;
+      }
+      .activeDot {
+        display: block;
+        width: 11px;
+        height: 11px;
+        border: 5px solid white;
+
+        border-radius: 50%;
+        background-color: $color-primary;
+        outline: 1px solid $color-primary;
+      }
+    }
+  }
+}

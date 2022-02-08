@@ -2,7 +2,6 @@ import style from "./dropdown.module.scss";
 import React, { useState } from "react";
 import { ArrowIcon } from "../../assets/icons/Icons";
 export const CustomDropdown = ({ title, data = [] }) => {
-  console.log(data);
   const [active, setActive] = useState(false);
 
   return (
