@@ -1,7 +1,9 @@
+import Wrapper from "./pages/Wrapper";
+import "./assets/style/variables.module.scss";
 function App() {
   return (
     <div>
-      <h1>hello world</h1>
+      <Wrapper />
     </div>
   );
 }

@@ -1,0 +1,30 @@
+.navbarWrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  padding: 15px 6%;
+  box-sizing: border-box;
+  background-color: transparent;
+  z-index: 1000;
+  display: flex;
+
+  .shopSide {
+    width: 80%;
+    display: flex;
+    align-items: baseline;
+    gap: 5%;
+  }
+  .userSide {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 25px;
+    img {
+      width: 28px;
+      height: 29px;
+      border-radius: 50%;
+    }
+  }
+}

@@ -1,0 +1,98 @@
+$gray-600: #3a3a3a;
+$gray-500: #616161;
+$gray-400: #898989;
+$gray-300: #b0b0b0;
+$gray-200: #d8d8d8;
+$gray-100: #f4f5f7;
+$color-primary: #e89f71;
+$green-accents: #2ec1ac;
+$red-accents: #e97171;
+
+@font-face {
+  font-family: gilroySemiBold;
+  src: url(../fonts/gilroy/Gilroy-SemiBold.ttf);
+}
+@font-face {
+  font-family: gilroyLight;
+  src: url(../fonts/gilroy/Gilroy-Light.ttf);
+}
+@font-face {
+  font-family: gilroyMedium;
+  src: url(../fonts/gilroy/Gilroy-Medium.ttf);
+}
+@font-face {
+  font-family: gilroyBold;
+  src: url(../fonts/gilroy/Gilroy-Bold.ttf);
+}
+
+html,
+body {
+  line-height: 29px;
+  font-size: 24px;
+  margin: 0;
+  font-family: gilroyLight;
+  color: $gray-600;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-family: gilroyBold;
+  line-height: 67px;
+  font-size: 56px;
+}
+h2 {
+  color: black;
+}
+h4 {
+  line-height: 33px;
+  margin: 6px 0px;
+  padding: 0;
+}
+span {
+  margin: 2px 0px;
+  padding: 0;
+  line-height: 24px;
+}
+p {
+  line-height: 30px;
+  margin: 4px 0px;
+  padding: 0;
+}
+button {
+  background-color: $color-primary;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  cursor: pointer;
+  text-align: center;
+  border: 2px solid $color-primary;
+  &:hover {
+    color: $color-primary;
+    transition: 600ms background-color ease-out;
+    background-color: rgba(white, 0.7);
+    border: 2px solid $color-primary;
+  }
+}
+a {
+  display: block;
+  color: $gray-600;
+  text-decoration: none;
+  font-size: 24px;
+}
+img {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+svg {
+  cursor: pointer;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
