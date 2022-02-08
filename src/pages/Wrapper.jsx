@@ -2,6 +2,7 @@ import React from "react";
 import Home from "./home/Home";
 import Inspiration from "./inspiration/Inspiration";
 import OurProducts from "./ourProducts/OurProducts";
+import Tips from "./tips/Tips";
 
 export default function Wrapper() {
   return (
@@ -9,6 +10,7 @@ export default function Wrapper() {
       <Home />
       <OurProducts />
       <Inspiration />
+      <Tips />
     </div>
   );
 }
