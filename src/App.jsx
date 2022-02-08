@@ -2,7 +2,7 @@ import Wrapper from "./pages/Wrapper";
 import "./assets/style/variables.module.scss";
 function App() {
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       <Wrapper />
     </div>
   );

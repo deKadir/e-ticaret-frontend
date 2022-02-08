@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { CartIcon, HearthIcon } from "../../assets/icons/Icons";
 import { SearchInput } from "../inputs/Inputs";
 import style from "./navbar.module.scss";
@@ -6,11 +6,28 @@ import profile from "../../assets/images/profile.jpg";
 
 import { CustomDropdown } from "../dropdown/Dropdown";
 import { products } from "./../../constants/DummyData";
-import { DropdownIcon, IconButton } from "../iconButton/IconButton";
+import { DropdownIcon } from "../iconButton/IconButton";
 
 export default function Navbar() {
+  const [scroll, setScroll] = useState(0);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      setScroll(window.pageYOffset);
+    });
+  }, [scroll]);
   return (
-    <div className={style.navbarWrapper}>
+    <div
+      className={style.navbarWrapper}
+      style={
+        scroll > 80
+          ? {
+              padding: " 5px 5%",
+              backgroundColor: "white",
+              boxShadow: `rgba(149, 157, 165, 0.2) 0px 8px 24px`,
+            }
+          : {}
+      }
+    >
       <div className={style.shopSide}>
         <h2>Funiro.</h2>
 

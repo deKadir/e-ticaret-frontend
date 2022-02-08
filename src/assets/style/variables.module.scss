@@ -42,7 +42,8 @@ ul {
 h1 {
   font-family: gilroyBold;
   line-height: 67px;
-  font-size: 56px;
+  margin: 12px 0px;
+  font-size: 45px;
 }
 h2 {
   color: black;
@@ -56,6 +57,7 @@ span {
   margin: 2px 0px;
   padding: 0;
   line-height: 24px;
+  user-select: none;
 }
 p {
   line-height: 30px;
