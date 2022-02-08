@@ -1,7 +1,7 @@
 import React from "react";
 
 import style from "./our.module.scss";
-import Products from "../../components/products/Products";
+import Products from "../products/Products";
 import { productItems } from "../../constants/DummyData";
 export default function OurProducts() {
   return (

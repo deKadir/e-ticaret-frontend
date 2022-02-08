@@ -1,6 +1,15 @@
 import React from "react";
-import HomeFooter from "../../components/homeFooter/HomeFooter";
-import { Navbar, Hero } from "./../../components/index";
+
+import {
+  Navbar,
+  Hero,
+  Footer,
+  OurProducts,
+  Inspiration,
+  HomeFooter,
+  Tips,
+} from "./../../components/index";
+
 export default function Home() {
   return (
     <div
@@ -9,6 +18,10 @@ export default function Home() {
       <Navbar />
       <Hero />
       <HomeFooter />
+      <OurProducts />
+      <Inspiration />
+      <Tips />
+      <Footer />
     </div>
   );
 }

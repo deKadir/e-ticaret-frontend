@@ -99,3 +99,17 @@ svg {
   -khtml-user-select: none;
   user-select: none;
 }
+input {
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 8px 15px;
+  &::placeholder {
+    font-size: 16px;
+    line-height: 24px;
+    font-family: gilroyLight;
+  }
+  &:focus::placeholder {
+    color: transparent;
+  }
+}

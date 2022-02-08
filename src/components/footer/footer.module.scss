@@ -1,0 +1,53 @@
+@import "../../assets/style/variables.module.scss";
+.footerWrapper {
+  width: 100%;
+  margin-top: 10%;
+  padding: 0px 5%;
+  box-sizing: border-box;
+  display: flex;
+  margin-bottom: 5%;
+  font-family: gilroyMedium;
+  color: $gray-500;
+  .footerContent {
+    width: 90%;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+    span {
+      font-size: 16px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      cursor: pointer;
+      user-select: auto;
+    }
+    h2 {
+      font-size: 24px;
+    }
+    .submitContainer {
+      input {
+        background-color: $gray-100;
+        height: 45px;
+        box-sizing: border-box;
+        &::placeholder {
+          color: $gray-400;
+          font-family: gilroyMedium;
+        }
+        &:focus::placeholder {
+          color: transparent;
+        }
+      }
+      svg {
+        &:last-child {
+          width: 45px;
+          height: 45px;
+          box-sizing: border-box;
+          padding: 5px;
+          background-color: $color-primary;
+        }
+      }
+    }
+  }
+}
