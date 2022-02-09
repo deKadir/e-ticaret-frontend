@@ -5,5 +5,16 @@ import Inspiration from "./inspiration/Inspiration";
 import OurProducts from "./ourProducts/OurProducts";
 import Tips from "./tips/Tips";
 import HomeFooter from "./homeFooter/HomeFooter";
-
-export { Navbar, Hero, Footer, Tips, Inspiration, OurProducts, HomeFooter };
+import Products from "./products/Products";
+import CategoryBody from "./categoryBody/CategoryBody";
+export {
+  Navbar,
+  Hero,
+  Footer,
+  Tips,
+  Inspiration,
+  OurProducts,
+  Products,
+  HomeFooter,
+  CategoryBody,
+};

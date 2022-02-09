@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import style from "./product.module.scss";
 import { ShareIcon, HearthIcon } from "../../assets/icons/Icons";
-export default function Product({ product }) {
+export default function Content({ product }) {
   const [hover, setHover] = useState(false);
   return (
     <div
