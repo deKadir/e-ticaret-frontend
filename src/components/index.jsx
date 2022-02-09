@@ -9,6 +9,8 @@ import Products from "./products/Products";
 import CategoryBody from "./categoryBody/CategoryBody";
 import ProductDetail from "./productDetail/ProductDetail";
 import Recommended from "./recommended/Recommended";
+import ShoppingBody from "./shoppingCartBody/ShoppingBody";
+
 export {
   Navbar,
   Hero,
@@ -21,4 +23,5 @@ export {
   CategoryBody,
   ProductDetail,
   Recommended,
+  ShoppingBody,
 };

@@ -19,7 +19,7 @@
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
+    height: 40px;
     .selectBody {
       width: 100%;
       border: 1px solid $gray-500;
@@ -42,6 +42,9 @@
           color: white;
         }
       }
+    }
+    svg {
+      margin-left: 15px;
     }
   }
 }
