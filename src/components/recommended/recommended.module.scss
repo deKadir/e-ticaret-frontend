@@ -1,0 +1,45 @@
+@import "../../assets/style/variables.module.scss";
+.recommendedWrapper {
+  width: 100%;
+  margin-top: 10%;
+  padding: 0px 5%;
+  box-sizing: border-box;
+  h1 {
+    font-size: 24px;
+    line-height: 28px;
+    font-family: gilroyMedium;
+    margin-bottom: 5%;
+  }
+  .carouselWrapper {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    .leftArrow,
+    .rightArrow {
+      position: absolute;
+      top: 180px;
+      border-radius: 50%;
+      background-color: $gray-100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 5px;
+      z-index: 100;
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    .leftArrow {
+      left: -40px;
+    }
+    .rightArrow {
+      right: -40px;
+    }
+  }
+
+  .productContainer {
+    margin-left: 5%;
+  }
+}

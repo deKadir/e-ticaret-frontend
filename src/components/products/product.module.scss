@@ -28,8 +28,7 @@
   display: flex;
   flex-direction: column;
   text-align: start;
-  max-width: 23%;
-
+  width: 100%;
   height: 100%;
   margin-bottom: 2%;
 
@@ -104,6 +103,7 @@
     padding: 25px 10px;
     box-sizing: border-box;
     background-color: $gray-100;
+    width: 100%;
 
     div {
       display: flex;

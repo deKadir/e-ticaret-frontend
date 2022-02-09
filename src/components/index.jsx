@@ -7,6 +7,8 @@ import Tips from "./tips/Tips";
 import HomeFooter from "./homeFooter/HomeFooter";
 import Products from "./products/Products";
 import CategoryBody from "./categoryBody/CategoryBody";
+import ProductDetail from "./productDetail/ProductDetail";
+import Recommended from "./recommended/Recommended";
 export {
   Navbar,
   Hero,
@@ -17,4 +19,6 @@ export {
   Products,
   HomeFooter,
   CategoryBody,
+  ProductDetail,
+  Recommended,
 };
