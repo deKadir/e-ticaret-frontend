@@ -1,9 +1,7 @@
 import React from "react";
-import { CloseIcon, HearthIcon } from "../../assets/icons/Icons";
-import Select from "../select/Select";
 import style from "./shopping.module.scss";
-import product_1 from "../../assets/images/product_detail_1.jpg";
 import Item from "./Item";
+import Payment from "../payment/Payment";
 export default function ShoppingBody() {
   return (
     <div className={style.shoppingWrapper}>
@@ -40,6 +38,7 @@ export default function ShoppingBody() {
           <button>Continue to checkout</button>
         </div>
       </div>
+      <Payment />
     </div>
   );
 }

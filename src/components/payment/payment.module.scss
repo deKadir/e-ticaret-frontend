@@ -1,0 +1,229 @@
+@import "../../assets/style/variables.module.scss";
+.paymentWrapper {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#000, 0.5);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  left: 0;
+  button {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    cursor: auto;
+    &:hover {
+      border: none;
+      background-color: transparent;
+    }
+  }
+
+  .paymentPopup {
+    width: 70%;
+    height: 90%;
+    background-color: #fff;
+    padding: 1%;
+    z-index: 1000;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+      font-size: 32px;
+      padding-top: 20px;
+      color: $color-primary;
+    }
+    .paymentSteps {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-primary;
+        border-radius: 50%;
+        color: white;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        margin: 0;
+      }
+      small {
+        display: block;
+        width: 30px;
+        padding: 0;
+        margin: 0;
+        height: 2px;
+        background-color: rgba($color-primary, 0.7);
+      }
+    }
+
+    .payButton {
+      position: static;
+
+      border-radius: 5px;
+      cursor: pointer;
+      border: 2px solid $color-primary;
+      width: 20%;
+      height: fit-content;
+      padding: 15px 10px;
+      background-color: $color-primary;
+      &:hover {
+        background-color: white;
+        color: $color-primary;
+      }
+    }
+  }
+  .arrowIcon,
+  .closeIcon {
+    position: absolute;
+
+    top: 40px;
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: $gray-500;
+        stroke: $gray-500;
+      }
+    }
+  }
+  .arrowIcon {
+    left: 40px;
+  }
+  .closeIcon {
+    right: 40px;
+  }
+}
+
+// <---------------------payment form-------------------->
+
+form {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0% 2%;
+  gap: 50px;
+  display: flex;
+
+  align-items: flex-start;
+  input {
+    display: block;
+    border: 1px solid $gray-200;
+    width: 100%;
+    margin: 15px 0px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 10px;
+    font-size: 16px;
+    &::placeholder {
+      font-family: gilroyMedium;
+    }
+    background-color: $gray-100;
+  }
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    margin: 15px 0px;
+    padding: 17px 14px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-family: gilroyMedium;
+
+    border: 1px solid $gray-200;
+    font-size: 16px;
+    &:focus::placeholder {
+      color: transparent;
+    }
+    background-color: $gray-100;
+  }
+  .leftSide,
+  .rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .leftSide {
+    text-align: start;
+    h4 {
+      color: $color-primary;
+    }
+    .paymentMethods {
+      box-sizing: border-box;
+      display: flex;
+      margin-top: 20px;
+      flex-direction: column;
+      width: 100%;
+      .paymentMethod {
+        cursor: pointer;
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        align-items: center;
+        padding: 10px 10px;
+        border-radius: 5px;
+        &:hover {
+          background-color: rgba($color-primary, 0.3);
+        }
+
+        gap: 5%;
+        svg {
+          display: block;
+          path {
+            stroke: $color-primary;
+          }
+        }
+        label {
+          font-size: 12px;
+          font-weight: bold;
+          width: 100%;
+          cursor: pointer;
+        }
+        input {
+          margin: 0;
+          padding: 0;
+          width: 24px;
+          height: 24px;
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+}
+// <---------------------payment success-------------------->
+
+.successWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  .done {
+    width: 130px;
+    height: 130px;
+    background-color: $color-primary;
+    border-radius: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  label {
+    color: $color-primary;
+    margin-bottom: 30px;
+  }
+}
