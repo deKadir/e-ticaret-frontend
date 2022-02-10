@@ -1,0 +1,102 @@
+@import "../../assets/style/variables.module.scss";
+.authWrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 10002;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .authPopup {
+    width: 80%;
+    height: 90%;
+    background: linear-gradient(to left, #ffede1 40%, #fff 20%);
+
+    z-index: 1003;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    svg {
+      cursor: auto;
+      width: 100%;
+      height: 100%;
+      padding: 3% 0px;
+      box-sizing: border-box;
+    }
+  }
+  span {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(#000, 0.6);
+    z-index: 1;
+  }
+}
+
+.componentWrapper {
+  width: 100%;
+  padding: 4% 10%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  input {
+    background-color: #fff6f4;
+    padding: 10px 15px;
+
+    border-radius: 5px;
+    &::placeholder {
+      color: $gray-500;
+      font-family: Roboto, sans-serif;
+      font-size: 14px;
+    }
+    font-size: 16px;
+    height: 36px;
+    font-weight: normal;
+    margin: 15px 0px;
+  }
+  label {
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .labelContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    label {
+      margin: 0;
+      padding: 0;
+    }
+    a {
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  button {
+    align-self: center;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-size: 16px;
+    border-radius: 15px;
+    margin: 15px 0px;
+  }
+  .option {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    font-size: 16px;
+    a {
+      font-size: 16px;
+      margin-left: 10px;
+      cursor: pointer;
+      color: $color-primary;
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./shopping.module.scss";
 import Item from "./Item";
-import Payment from "../payment/Payment";
+import AuthPopup from "../auth/AuthPopup";
 export default function ShoppingBody() {
   return (
     <div className={style.shoppingWrapper}>
@@ -38,7 +38,8 @@ export default function ShoppingBody() {
           <button>Continue to checkout</button>
         </div>
       </div>
-      <Payment />
+      {/* <Payment /> */}
+      <AuthPopup />
     </div>
   );
 }
