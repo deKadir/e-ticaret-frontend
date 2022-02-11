@@ -3,6 +3,7 @@ import ShoppingCart from "./cart/ShoppingCart";
 import Category from "./category/Category";
 import Detail from "./detail/Detail";
 import Home from "./home/Home";
+import UserInfo from "./../pages/userInfo/UserInfo";
 
 export default function Wrapper() {
   return (
@@ -10,7 +11,8 @@ export default function Wrapper() {
       {/* <Home /> */}
       {/* <Category /> */}
       {/* <Detail /> */}
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
+      <UserInfo />
     </div>
   );
 }

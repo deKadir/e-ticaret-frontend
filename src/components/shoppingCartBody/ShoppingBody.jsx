@@ -39,7 +39,7 @@ export default function ShoppingBody() {
         </div>
       </div>
       {/* <Payment /> */}
-      <AuthPopup />
+      {/* <AuthPopup /> */}
     </div>
   );
 }

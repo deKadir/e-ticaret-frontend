@@ -15,7 +15,7 @@ export default function Register() {
       <input type="password" placeholder="Password" />
       <button>Sign up</button>
       <label className={style.option}>
-        Dont have account? <a>Sign in</a>
+        Already have account? <a>Sign in</a>
       </label>
     </div>
   );

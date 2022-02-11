@@ -43,7 +43,7 @@ export default function Navbar() {
 
         <CartIcon width={24} height={24} />
 
-        <DropdownIcon data={["login", "register", "logout"]}>
+        <DropdownIcon data={["profile", "logout"]}>
           <img src={profile} />
         </DropdownIcon>
       </div>
