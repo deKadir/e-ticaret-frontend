@@ -30,6 +30,7 @@
       input {
         background-color: $gray-100;
         height: 45px;
+
         box-sizing: border-box;
         &::placeholder {
           color: $gray-400;
@@ -46,6 +47,7 @@
           box-sizing: border-box;
           padding: 5px;
           background-color: $color-primary;
+          margin-left: -3px;
         }
       }
     }

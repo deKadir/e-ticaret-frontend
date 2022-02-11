@@ -6,6 +6,8 @@ import furniture_3 from "../../assets/images/furniture_3.png";
 import "@brainhubeu/react-carousel/lib/style.css";
 import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
 import { ArrorRightIcon } from "./../../assets/icons/Icons";
+import { Link } from "react-router-dom";
+
 export default function Hero() {
   return (
     <div className={style.heroContainer}>
@@ -16,6 +18,7 @@ export default function Hero() {
             Our furniture is made from selected and best quality materials that
             are suitable for your dream home
           </p>
+
           <button>Shop Now</button>
         </div>
         <Carousel

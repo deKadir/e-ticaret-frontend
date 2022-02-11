@@ -1,25 +1,26 @@
 import React, { useState } from "react";
-import style from "./product.module.scss";
+import Style from "./product.module.scss";
 import { ShareIcon, HearthIcon } from "../../assets/icons/Icons";
-export default function Content({ product }) {
+export default function Content({ product, style = {} }) {
   const [hover, setHover] = useState(false);
   return (
     <div
-      className={style.product}
+      className={Style.product}
       onMouseEnter={() => {
         setHover(true);
       }}
+      style={style}
       onMouseLeave={() => [setHover(false)]}
     >
       {hover && (
-        <div className={style.productHover}>
+        <div className={Style.productHover}>
           <button>Add to Cart</button>
-          <div className={style.hoverIcons}>
-            <div className={style.hoverIcon}>
+          <div className={Style.hoverIcons}>
+            <div className={Style.hoverIcon}>
               <ShareIcon />
               <span>Share</span>
             </div>
-            <div className={style.hoverIcon}>
+            <div className={Style.hoverIcon}>
               <HearthIcon />
               <span>Like</span>
             </div>
@@ -28,7 +29,7 @@ export default function Content({ product }) {
       )}
 
       <img src={product.img} />
-      <div className={style.productBody}>
+      <div className={Style.productBody}>
         {
           <discount
             style={!product.discount ? { backgroundColor: "#2ec1ac" } : {}}

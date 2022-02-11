@@ -6,7 +6,7 @@ export default function Products({ products = [] }) {
     <div className={style.productsContainer}>
       <div className={style.productsWrapper}>
         {products.map((item, key) => {
-          return <Content key={key} product={item} />;
+          return <Content style={{ width: "24%" }} key={key} product={item} />;
         })}
       </div>
       <button>Show more</button>

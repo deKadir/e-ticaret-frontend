@@ -87,7 +87,7 @@ export default function Tips() {
       </div>
       <Dots
         value={value}
-        number={3}
+        number={tips.length}
         onChange={(e) => setValue(e)}
         thumbnails={tips.map((p, index) => {
           return (

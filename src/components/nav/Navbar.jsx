@@ -7,7 +7,7 @@ import profile from "../../assets/images/profile.jpg";
 import { CustomDropdown } from "../dropdown/Dropdown";
 import { products } from "./../../constants/DummyData";
 import { DropdownIcon } from "../iconButton/IconButton";
-
+import { Link } from "react-router-dom";
 export default function Navbar() {
   const [scroll, setScroll] = useState(0);
   useEffect(() => {
@@ -29,13 +29,12 @@ export default function Navbar() {
       }
     >
       <div className={style.shopSide}>
-        <h2>Funiro.</h2>
-
+        <Link to={"/"}>
+          <h2>Funiro.</h2>
+        </Link>
         <CustomDropdown title={"Products"} data={products} />
         <CustomDropdown title={"Rooms"} data={products} />
-
         <a href="#">Inspiration</a>
-
         <SearchInput placeholder="Search for minimalist chair" />
       </div>
       <div className={style.userSide}>
