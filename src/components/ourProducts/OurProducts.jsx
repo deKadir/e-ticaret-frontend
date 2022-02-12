@@ -5,7 +5,7 @@ import Products from "../products/Products";
 import { productItems } from "../../constants/DummyData";
 export default function OurProducts() {
   return (
-    <div className={style.ourProductsWrapper}>
+    <div className={style.ourProductsWrapper} id="products">
       <h1>Our Products</h1>
       <Products products={productItems} />
     </div>

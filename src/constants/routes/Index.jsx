@@ -4,6 +4,7 @@ import {
   Detail,
   Home,
   UserInfo,
+  OurProducts,
 } from "../../pages/index";
 const routes = [
   {
@@ -25,7 +26,7 @@ const routes = [
     protected: false,
   },
   {
-    path: "/category",
+    path: "/rooms/:room",
     component: Category,
     exact: false,
     protected: false,

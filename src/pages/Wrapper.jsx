@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-import UserInfo from "./../pages/userInfo/UserInfo";
 import { Routes, Route } from "react-router-dom";
 import routes from "./../constants/routes/Index";
-
+import ScrollToTop from "../helpers/ScrollToTop";
 export default function Wrapper() {
+  useEffect(() => {}, []);
+
   return (
     <div style={{ width: "100%" }}>
       <Routes>
         {routes.map((route, index) => {
-          return <Route path={route.path} element={<route.component />} />;
+          return (
+            <>
+              <Route
+                key={index}
+                path={route.path}
+                element={
+                  <>
+                    <ScrollToTop />
+                    <route.component />
+                  </>
+                }
+              />
+            </>
+          );
         })}
       </Routes>
     </div>

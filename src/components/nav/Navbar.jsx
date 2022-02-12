@@ -29,18 +29,28 @@ export default function Navbar() {
       }
     >
       <div className={style.shopSide}>
-        <Link to={"/"}>
+        <a href={"/"}>
           <h2>Funiro.</h2>
-        </Link>
+        </a>
         <CustomDropdown title={"Products"} data={products} />
-        <CustomDropdown title={"Rooms"} data={products} />
-        <a href="#">Inspiration</a>
+        <CustomDropdown
+          title={"Rooms"}
+          data={[
+            "Bedroom",
+            "Living Room",
+            "Child Room",
+            "Bath Room",
+            "Outdoor",
+          ]}
+        />
+        <a href="/#inspiration">Inspiration</a>
         <SearchInput placeholder="Search for minimalist chair" />
       </div>
       <div className={style.userSide}>
         <HearthIcon width={24} height={24} />
-
-        <CartIcon width={24} height={24} />
+        <Link to={"/cart"}>
+          <CartIcon width={24} height={24} />
+        </Link>
 
         <DropdownIcon data={["profile", "logout"]}>
           <img src={profile} />

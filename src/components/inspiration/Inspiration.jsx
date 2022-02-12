@@ -3,6 +3,7 @@ import style from "./inspiration.module.scss";
 import "@brainhubeu/react-carousel/lib/style.css";
 import Carousel, { autoplayPlugin, Dots } from "@brainhubeu/react-carousel";
 import { productItems } from "../../constants/DummyData";
+import { Link } from "react-router-dom";
 
 export default function Inspiration() {
   const [value, setValue] = useState(0);
@@ -15,14 +16,16 @@ export default function Inspiration() {
     }
   };
   return (
-    <div className={style.inspirationWrapper}>
+    <div className={style.inspirationWrapper} id="inspiration">
       <div className={style.contentSide}>
         <h1>50+ Beautiful rooms inspiration</h1>
         <p>
           Our designer already made a lot of beautiful prototipe of rooms that
           inspire you
         </p>
-        <button>Explore More</button>
+        <Link to={"/rooms/bedroom"}>
+          <button>Explore More</button>
+        </Link>
       </div>
       <div className={style.gallerySide}>
         <div className={style.carouselWrapper}>

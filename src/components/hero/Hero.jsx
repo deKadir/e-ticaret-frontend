@@ -6,11 +6,9 @@ import furniture_3 from "../../assets/images/furniture_3.png";
 import "@brainhubeu/react-carousel/lib/style.css";
 import Carousel, { autoplayPlugin } from "@brainhubeu/react-carousel";
 import { ArrorRightIcon } from "./../../assets/icons/Icons";
-import { Link } from "react-router-dom";
-
 export default function Hero() {
   return (
-    <div className={style.heroContainer}>
+    <div className={style.heroContainer} id="home">
       <div className={style.carouselWrapper}>
         <div className={style.heroContent}>
           <h1>High-Quality Furniture Just For You</h1>
@@ -19,7 +17,9 @@ export default function Hero() {
             are suitable for your dream home
           </p>
 
-          <button>Shop Now</button>
+          <button onClick={() => (window.location.href = "#products")}>
+            Shop Now
+          </button>
         </div>
         <Carousel
           plugins={[

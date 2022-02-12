@@ -29,16 +29,21 @@
     z-index: 101;
   }
   .dropdownItems {
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     position: absolute;
     top: 35px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     z-index: 102;
+    width: 170px;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     .dropdownItem {
-      display: block;
       background-color: rgba(#fff, 0.9);
-      padding: 10px 35px;
+      padding: 10px 30px;
+      width: 100%;
       transition: 500ms;
+      box-sizing: border-box;
+      display: inline-block;
       font-size: 18px;
       &:hover {
         background-color: rgba($color-primary, 0.9);
