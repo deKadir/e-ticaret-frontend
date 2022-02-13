@@ -1,8 +1,6 @@
 import furniture_1 from "../assets/images/furniture_1.jpg";
 import furniture_3 from "../assets/images/furniture_3.png";
 import furniture_2 from "../assets/images/furniture_2.jpg";
-import furniture_4 from "../assets/images/furniture_4.jpg";
-import furniture_5 from "../assets/images/furniture_5.jpg";
 export const roomsDropdown = [
   {
     title: "Bedroom",

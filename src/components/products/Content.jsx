@@ -28,7 +28,7 @@ export default function Content({ product, style = {} }) {
         </div>
       )}
 
-      <img src={product.img} />
+      <img src={product.img} alt="product" />
       <div className={Style.productBody}>
         {
           <discount

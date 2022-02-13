@@ -34,7 +34,7 @@ export default function Hero() {
           animationSpeed={3000}
         >
           <div className={style.carouselItem}>
-            <img src={furniture_1} />
+            <img src={furniture_1} alt="product" />
             <div className={style.productInfo}>
               <h4>Bohauss</h4>
               <span>Luxury big sofa 2-seat</span>
@@ -43,7 +43,7 @@ export default function Hero() {
             </div>
           </div>
           <div className={style.carouselItem}>
-            <img src={furniture_2} />
+            <img src={furniture_2} alt="product" />
             <div className={style.productInfo}>
               <h4>Bohauss</h4>
               <span>Luxury big sofa 2-seat</span>
@@ -52,7 +52,7 @@ export default function Hero() {
             </div>
           </div>
           <div className={style.carouselItem}>
-            <img src={furniture_3} />
+            <img src={furniture_3} alt="product" />
             <div className={style.productInfo}>
               <h4>Bohauss</h4>
               <span>Luxury big sofa 2-seat</span>

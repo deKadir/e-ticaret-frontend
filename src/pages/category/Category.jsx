@@ -1,6 +1,5 @@
 import React from "react";
-import { Footer, Navbar, Products, CategoryBody } from "../../components/index";
-import { productItems } from "../../constants/DummyData";
+import { Footer, Navbar, CategoryBody } from "../../components/index";
 
 export default function Category() {
   return (

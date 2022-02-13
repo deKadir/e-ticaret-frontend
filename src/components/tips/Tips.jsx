@@ -77,7 +77,7 @@ export default function Tips() {
           {tips.map((item, key) => {
             return (
               <div key={key} className={style.content}>
-                <img src={item.img} />
+                <img src={item.img} alt="tip" />
                 <p>{item.description}</p>
                 <span>{item.time}</span>
               </div>

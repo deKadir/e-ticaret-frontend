@@ -10,8 +10,8 @@ export default function ProductDetail() {
   return (
     <div className={style.detailWrapper}>
       <div className={style.productInfo}>
-        <img src={detail_1} />
-        <img src={detail_2} />
+        <img src={detail_1} alt="details" />
+        <img src={detail_2} alt="details" />
         <div className={style.buyOptions}>
           <h1>Checked Duvet Cover Set</h1>
           <h4>39.99$</h4>
@@ -27,7 +27,7 @@ export default function ProductDetail() {
         </div>
       </div>
       <div className={style.conscious}>
-        <img src={detail_3} />
+        <img src={detail_3} alt="detail" />
         <div className={style.description}>
           <p>Conscious</p>
           <p>

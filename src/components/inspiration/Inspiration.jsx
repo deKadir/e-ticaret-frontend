@@ -44,7 +44,7 @@ export default function Inspiration() {
             animationSpeed={3000}
           >
             {productItems.map((item, key) => {
-              return <img src={item.img} key={key} />;
+              return <img src={item.img} alt="product" key={key} />;
             })}
           </Carousel>
           <Dots
