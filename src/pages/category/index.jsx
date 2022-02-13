@@ -5,7 +5,6 @@ export default function Category() {
   return (
     <div>
       <Navbar />
-
       <CategoryBody />
       <Footer />
     </div>

@@ -1,7 +1,7 @@
-import ShoppingCart from "../pages/cart/ShoppingCart";
-import Category from "../pages/category/Category";
-import Detail from "../pages/detail/Detail";
-import Home from "../pages/home/Home";
-import UserInfo from "../pages/userInfo/UserInfo";
+import ShoppingCart from "./cart";
+import Category from "./category";
+import Detail from "./detail";
+import Home from "./home";
+import UserInfo from "../pages/userInfo";
 import { OurProducts } from "../components";
 export { ShoppingCart, Category, Detail, Home, UserInfo, OurProducts };
