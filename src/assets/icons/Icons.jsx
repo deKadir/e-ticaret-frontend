@@ -432,7 +432,6 @@ export const CreditCard = () => {
     >
       <mask
         id="mask0_37_381"
-        style="mask-type:alpha"
         maskUnits="userSpaceOnUse"
         x="0"
         y="0"
