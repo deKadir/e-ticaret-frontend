@@ -6,7 +6,7 @@ import Select from "../select/Select";
 export default function ProductItem() {
   return (
     <div className={style.product}>
-      <img src={product_1} />
+      <img src={product_1} alt="product" />
       <div className={style.productInfo}>
         <div className={style.productTitle}>
           <h4>Checked Duvet Cover Set</h4>
