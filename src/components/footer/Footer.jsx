@@ -15,6 +15,8 @@ export default function Footer() {
         <a
           href="https://www.google.com/maps/d/u/0/viewer?gl=US&ie=UTF8&oe=UTF8&msa=0&mid=1G8nHzJ_9hfSUGhB0Bnn9V2OUN2c&ll=37.019391511922436%2C35.30405300000002&z=13"
           target="_blank"
+          without
+          rel="noreferrer"
         >
           <LocationIcon /> Adana, Turkey
         </a>
@@ -33,13 +35,28 @@ export default function Footer() {
       </div>
       <div className={style.footerContent}>
         <h2>Stay Connected</h2>
-        <a href="https://www.facebook.com" target={"_blank"}>
+        <a
+          href="https://www.facebook.com"
+          target={"_blank"}
+          without
+          rel="noreferrer"
+        >
           Facebook
         </a>
-        <a href="https://www.instagram.com" target={"_blank"}>
+        <a
+          href="https://www.instagram.com"
+          target={"_blank"}
+          without
+          rel="noreferrer"
+        >
           Instagram
         </a>
-        <a href="https://www.twitter.com" target={"_blank"}>
+        <a
+          href="https://www.twitter.com"
+          target={"_blank"}
+          without
+          rel="noreferrer"
+        >
           Twitter
         </a>
       </div>
