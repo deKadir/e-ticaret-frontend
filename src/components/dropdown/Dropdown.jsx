@@ -21,8 +21,8 @@ export const CustomDropdown = ({ title, data = [] }) => {
         <div className={style.dropdownItems}>
           {data.map((item, key) => {
             return (
-              <a className={style.dropdownItem} key={key}>
-                {item}
+              <a href={item.path} className={style.dropdownItem} key={key}>
+                {item.title}
               </a>
             );
           })}

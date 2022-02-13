@@ -1,0 +1,80 @@
+@import "../../assets/style/variables.module.scss";
+.bagWrapper {
+  overflow: auto;
+  width: 100%;
+  text-align: right;
+  box-sizing: border-box;
+  p {
+    font-size: 18px;
+  }
+  hr {
+    background-color: $gray-500;
+  }
+  .productsWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+  }
+}
+.product {
+  width: 100%;
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: row;
+  .productTitle {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img {
+    width: 20%;
+    height: auto;
+    margin-right: 18px;
+  }
+  .productInfo {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 100%;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  p {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 500;
+  }
+  table {
+    width: 50%;
+    tr {
+      td {
+        padding: 10px 5px 10px 0px;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 16px;
+      }
+    }
+  }
+  .options {
+    display: flex;
+    width: 50%;
+    align-items: center;
+
+    gap: 5%;
+    svg {
+      &:first-child {
+        border: 1px solid $gray-500;
+        height: auto;
+        width: 40px;
+        height: 40px;
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 3px;
+      }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { Footer, Navbar } from "../../components";
-import TabsContainer from "./../../components/userInfoTabs/TabsContainer";
+import TabsContainer from "./../../components/settings/TabsContainer";
 
 export default function UserInfo() {
   return (

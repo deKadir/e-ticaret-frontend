@@ -1,9 +1,9 @@
 import React from "react";
-import style from "./shopping.module.scss";
+import style from "./preview.module.scss";
 import { CloseIcon, HearthIcon } from "../../assets/icons/Icons";
 import product_1 from "../../assets/images/product_detail_1.jpg";
 import Select from "../select/Select";
-export default function Item() {
+export default function ProductItem() {
   return (
     <div className={style.product}>
       <img src={product_1} />

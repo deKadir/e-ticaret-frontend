@@ -5,7 +5,7 @@ export default function UserInfo() {
   return (
     <div className={style.tabWrapper}>
       <div className={style.form}>
-        <img src={profile} />
+        <img src={profile} alt="profile" />
         <label>Name</label>
         <input placeholder="name" value={"Kadir"} />
         <label>Lastname</label>

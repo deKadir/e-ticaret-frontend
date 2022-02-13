@@ -5,8 +5,7 @@ import style from "./navbar.module.scss";
 import profile from "../../assets/images/profile.jpg";
 
 import { CustomDropdown } from "../dropdown/Dropdown";
-import { products } from "./../../constants/DummyData";
-import { DropdownIcon } from "../iconButton/IconButton";
+import { roomsDropdown, productsDropdown } from "./../../constants/DummyData";
 import { Link } from "react-router-dom";
 export default function Navbar() {
   const [scroll, setScroll] = useState(0);
@@ -32,17 +31,8 @@ export default function Navbar() {
         <a href={"/"}>
           <h2>Funiro.</h2>
         </a>
-        <CustomDropdown title={"Products"} data={products} />
-        <CustomDropdown
-          title={"Rooms"}
-          data={[
-            "Bedroom",
-            "Living Room",
-            "Child Room",
-            "Bath Room",
-            "Outdoor",
-          ]}
-        />
+        <CustomDropdown title={"Products"} data={productsDropdown} />
+        <CustomDropdown title={"Rooms"} data={roomsDropdown} />
         <a href="/#inspiration">Inspiration</a>
         <SearchInput placeholder="Search for minimalist chair" />
       </div>
@@ -52,9 +42,9 @@ export default function Navbar() {
           <CartIcon width={24} height={24} />
         </Link>
 
-        <DropdownIcon data={["profile", "logout"]}>
-          <img src={profile} />
-        </DropdownIcon>
+        <Link to={"/settings/profile"}>
+          <img src={profile} alt="profile" />
+        </Link>
       </div>
     </div>
   );

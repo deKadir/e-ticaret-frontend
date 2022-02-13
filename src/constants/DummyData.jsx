@@ -3,7 +3,49 @@ import furniture_3 from "../assets/images/furniture_3.png";
 import furniture_2 from "../assets/images/furniture_2.jpg";
 import furniture_4 from "../assets/images/furniture_4.jpg";
 import furniture_5 from "../assets/images/furniture_5.jpg";
-export const products = ["Armchair", "Seat", "Sofa Set", "Table", "Carpet"];
+export const roomsDropdown = [
+  {
+    title: "Bedroom",
+    path: "/rooms/bedroom",
+  },
+  {
+    title: "Living Room",
+    path: "/rooms/living-room",
+  },
+  {
+    title: "Child Room",
+    path: "/rooms/child-room",
+  },
+
+  {
+    title: "Bath Room",
+    path: "/rooms/bath-room",
+  },
+
+  {
+    title: "Outdoor",
+    path: "/rooms/out-door",
+  },
+];
+export const productsDropdown = [
+  {
+    title: "Chair",
+    path: "/products/chair",
+  },
+  {
+    title: "Sofa Set",
+    path: "/products/sofa-set",
+  },
+  {
+    title: "Carpet",
+    path: "/products/carpet",
+  },
+
+  {
+    title: "Furniture",
+    path: "/products/furniture",
+  },
+];
 export const productItems = [
   {
     img: furniture_1,

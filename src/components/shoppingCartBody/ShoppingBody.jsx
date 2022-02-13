@@ -1,19 +1,14 @@
 import React from "react";
+import ProductsPreview from "../ProductsPreview/ProductsPreview";
 import style from "./shopping.module.scss";
-import Item from "./Item";
-import AuthPopup from "../auth/AuthPopup";
+
 export default function ShoppingBody() {
   return (
     <div className={style.shoppingWrapper}>
       <h1>Shopping Bag</h1>
       <div className={style.shoppingContainer}>
-        <div className={style.bagWrapper}>
-          <div className={style.productsWrapper}>
-            <Item />
-          </div>
-          <p>Total</p>
-          <hr />
-          <p>82.92$</p>
+        <div className={style.previewWrapper}>
+          <ProductsPreview />
         </div>
         <div className={style.loginWrapper}>
           <label>ADD A DISCOUNT CODE</label>
