@@ -37,7 +37,9 @@ export default function Navbar() {
         <SearchInput placeholder="Search for minimalist chair" />
       </div>
       <div className={style.userSide}>
-        <HearthIcon width={24} height={24} />
+        <Link to={"/wishlist"}>
+          <HearthIcon width={24} height={24} />
+        </Link>
         <Link to={"/cart"}>
           <CartIcon width={24} height={24} />
         </Link>

@@ -26,7 +26,10 @@ export default function TabsContainer() {
           {tabs.map((tab, index) => {
             return (
               <li key={index}>
-                <Link to={tab.path} className={style.active}>
+                <Link
+                  to={tab.path}
+                  className={tab.path === path && style.active}
+                >
                   {tab.title}
                 </Link>
               </li>

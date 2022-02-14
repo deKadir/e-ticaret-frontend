@@ -10,7 +10,6 @@ export default function ChangePassword() {
         <input placeholder="" />
         <label>New password</label>
         <input placeholder="" />
-
         <button>Save</button>
       </div>
     </div>
